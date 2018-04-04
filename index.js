@@ -1,4 +1,4 @@
-var zChat = require('./web-sdk.js');
+var zChat = require('./web-sdk');
 
 zChat.init({
     account_key: '5aFslibEbbykmM6aR3wlREgnjA5ubBQe'
@@ -11,13 +11,13 @@ zChat.on('connection_update', function(status) {
     }
 })
 
-module.exports = {
+// module.exports = {
 
-    "sendMessage": function() {
-        zChat.sendChatMsg('hello', function(err) {
-            if(err) {
-                console.log(err);
-            }
-        });
-    }
-}
+//     "sendMessage": function() {
+//         zChat.sendChatMsg('hello', function(err) {
+//             if(err) {
+//                 console.log(err);
+//             }
+//         });
+//     }
+// }
